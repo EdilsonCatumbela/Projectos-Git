@@ -1,0 +1,23 @@
+header {
+    /*Alinhamento do texto ao centro */
+    text-align: center;
+    /*Cor do fundo*/
+    background: rgb(182, 3, 107);
+    /*Espaco interno*/
+    padding: 30px;
+}
+
+header h1 {
+    /*Alter o tamento da font*/
+    font-size: 50px;
+    /*Alterar a cor do texto*/
+    color: white;
+}
+
+body {
+    /*Alter a fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*espoco externo*/
+    margin: 0;
+    background: #f1f1f1;
+}
