@@ -1,3 +1,8 @@
+* {
+    /*complementar o expaco do aside*/
+    box-sizing: border-box;
+}
+
 header {
     /*Alinhamento do texto ao centro */
     text-align: center;
@@ -56,4 +61,31 @@ nav a:hover {
 
 img {
     width: 100%;
+}
+
+.row {
+    /*O primeiro valor é referente a cima e baixo e o segundo a direita e esquerda*/
+    padding: 0 20px;
+    /*Forma de organizar os elementos como tabela*/
+    display: table;
+}
+
+section {
+    /*alinhado para esquerda */
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    /*espaco interno apenas a esquerda*/
+    padding-left: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    /*Margem Superior*/
+    margin-top: 20px;
 }
