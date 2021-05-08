@@ -90,3 +90,33 @@ aside {
     /*Margem Superior*/
     margin-top: 20px;
 }
+
+footer {
+    background-color: rgb(21, 4, 98);
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+
+footer dt {
+    /*Negritar */
+    font-weight: bold;
+}
+
+footer dl,
+footer p {
+    display: table-cell;
+}
+
+footer dd {
+    /*margem a esqueda*/
+    margin-left: 0;
+}
+
+footer p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+}
