@@ -21,3 +21,35 @@ body {
     margin: 0;
     background: #f1f1f1;
 }
+
+nav ul {
+    /*tirar os marcador da lista*/
+    list-style-type: none;
+    /*Alterr a cor de fundo*/
+    background-color: rgb(21, 4, 98);
+    /*complentar o elemento flutuante do nav li float*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    /*Tirar o sublinhados dos links*/
+    text-decoration: none;
+    /*separar o item do menu*/
+    padding: 16px;
+    /*considerar a altura e largura do elemento*/
+    display: block;
+}
+
+nav li {
+    /*deixar os links flutuando a esquerda*/
+    float: left;
+    /*coml*/
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(21, 4, 98);
+}
