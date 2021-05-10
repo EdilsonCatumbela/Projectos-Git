@@ -108,6 +108,7 @@ footer dt {
 footer dl,
 footer p {
     display: table-cell;
+    vertical-align: middle;
 }
 
 footer dd {

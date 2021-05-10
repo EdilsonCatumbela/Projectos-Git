@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    /**/
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    /*Alinhar horizontalmente as duas divs*/
+    display: flex;
+    /*Centralizar as duas divs horizontalmente*/
+    justify-content: center;
+    /*Centalizar as duas divs verticalmente*/
+    align-items: center;
+    /*Altura, é uma altura relativa depoendo das suas tegs mae*/
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo::before {
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 0;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.titulo-primeiro {
+    color: #fff;
+}
+
+.titulo-segundo {
+    color: #58af9b;
+}
+
+.descricao {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.descricao-primeira {
+    color: #fff;
+}
+
+.descricao-segunda {
+    color: ;
+}
+
+.primeira-coluna {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.segunda-coluna {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border-width: 0;
+}
+
+.btn-primeiro {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-primeiro:hover {
+    background-color: #fff;
+    color: #58af9b;
+}
+
+.btn-segundo {
+    background-color: #58af9b;
+    border: #58af9b;
+    transition: background-color .5s;
+}
+
+.btn-segundo:hover {
+    background-color: #fff;
+    border: #58af9b;
+    color: #58af9b;
+}
+
+.primeiro-conteudo {
+    display: flex;
+    /*display: none;*/
+    position: relative;
+}
+
+.primeiro-conteudo .segunda-coluna {
+    z-index: 12;
+}
+
+.segundo-conteudo {
+    /*Juntar as divs*/
+    position: absolute;
+    /*Fazer desaparecer a segunda div
+    display: none;*/
+    display: flex;
+}
+
+.segundo-conteudo .primeira-coluna {
+    order: 2;
+    z-index: -1;
+}
+
+.segundo-conteudo .segunda-coluna {
+    order: 1;
+    z-index: -1;
+}
+
+.link-media-social .item-media-social {
+    transition: background-color .5s;
+}
+
+.link-media-social:hover .item-media-social {
+    background-color: #58af9b;
+    color: #fff;
+    border-color: #58af9b;
+}
+
+.lista-media-social {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-media-social {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+
+
+/*Aplinar a margem no primeiro elemento*/
+
+.link-media-social:not(:first-child) {
+    margin-left: 10px;
+}
+
+.form {
+    display: flex;
+    /*Direciona o fluxo flex  de linha para columna*/
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.icon-modificador {
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+
+.senha-esquecida {
+    color: #34495e;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/*Usar a primeira letra*/
+
+.senha-esquecida::first-letter {
+    /*deixar a primeira letra maiscula*/
+    text-transform: capitalize;
+}
+
+.entrar-js .primeiro-conteudo .primeira-coluna,
+.entrar-js .primeiro-conteudo .segunda-coluna {
+    z-index: -1;
+}
+
+.entrar-js .segundo-conteudo .primeira-coluna,
+.entrar-js .segundo-conteudo .segunda-coluna {
+    z-index: 12;
+}
+
+.entrar-js .conteudo::before {
+    left: 60%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.criar-js .segundo-conteudo .primeira-coluna,
+.criar-js .segundo-conteudo .segunda-coluna {
+    z-index: -1;
+}
+
+.criar-js .primeiro-conteudo .primeira-coluna,
+.criar-js .primeiro-conteudo .segunda-coluna {
+    z-index: 12;
+}
